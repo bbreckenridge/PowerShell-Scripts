@@ -1,0 +1,1 @@
+Invoke-Command -ComputerName DEMOSQL2016, DEMOSQLFS2016 -ScriptBlock {Get-Service | where {$_.Name -like "*MSSQL*" -or $_.Name -like "*SQLBrowser*"}}
