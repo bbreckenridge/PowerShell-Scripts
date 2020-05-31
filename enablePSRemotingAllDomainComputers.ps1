@@ -1,0 +1,1 @@
+Invoke-Command -ComputerName (Get-ADComputer -filter * | select -expand Name) -scriptBlock {Enable-PSRemoting}
